@@ -1,0 +1,52 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.employee-dashboard-main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 10px;
+    background-color: #F1F6FA;
+    min-height: 100vh;
+}
+.employee-dashboard-inner{
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    width: 100%;
+    justify-content: center;
+}
+.employee-dashboard-add-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 10px;
+}
+.employee-dashboard-add-btn button{
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.employee-dashboard-table{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    min-height: 450px;
+    height: auto;
+    width: 100%;
+}
+.employee-dashboard-table th,
+.employee-dashboard-table td{
+    font-size: 12px;
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}

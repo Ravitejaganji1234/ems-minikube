@@ -1,0 +1,55 @@
+.add-employee-dashboard{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    font-size: 12px;
+}
+.add-employee-headings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.add-employee-headings h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.add-employee-headings button{
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.add-employee-main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.add-employee-inner{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.add-employee-inner label{
+    width: 90px;
+    text-align: left;
+}
+.add-employee-inner input{
+    width: 120px;
+    border: 1.5px solid #ccc;
+    height: 30px;
+    border-radius: 10px;
+}
+.add-btn{
+    border: 1.5px solid #ccc;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: lightgreen;
+    color: black;
+    cursor: pointer;
+}

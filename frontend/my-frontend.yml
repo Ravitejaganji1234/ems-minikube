@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-frontend
+  labels:
+    app: my-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-frontend
+  template:
+    metadata:
+      labels:
+        app: my-frontend
+    spec:
+      containers:
+      - name: myfrontend
+        image: my-frontend:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
+        env:
+        - name: BACKEND_URL
+          value: "http://crud-backend:8080"
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "500m"
+          limits:
+            memory: "1024Mi"
+            cpu: "1000m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-frontend
+spec:
+  type: ClusterIP
+  selector:
+    app: my-frontend
+  ports:
+  - port: 80
+    targetPort: 80
