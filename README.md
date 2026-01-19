@@ -15,12 +15,16 @@ This project highlights **local Kubernetes development, containerization, and or
 
 ## 🏗️ Architecture
 User
-│
-▼
+ |
+ |
+ |
+  
 Frontend (React.js) [LoadBalancer Service: 5173]
-│
-▼
+ |
+ |
+ |
 Backend (Spring Boot) [LoadBalancer Service: 8081]
-│
-▼
+ |
+ |
+ |
 Database (MySQL)
